@@ -42,7 +42,8 @@ h1 {
 
 .container-fluid {
   background-image: url('images/main.jpg');
-  height: 695px;
+/*   height: 695px; */
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -81,7 +82,8 @@ h1 {
 .bottom-container {
   padding: 15%;
   background-image: url('images/donate.jpg');
-  height: 690px;
+/*   height: 690px; */
+  height: 100vh;
   background-position: center;
   background-size: cover;
   text-align: center;
