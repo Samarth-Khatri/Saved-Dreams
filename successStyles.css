@@ -17,6 +17,17 @@ body {
 
 @media (max-width: 1028px) {
   .img {
-    width: 300px;
+    width: 500px;
+  }
+
+  .discription {
+    padding: 0;
+    font-size: 4rem;
+  }
+
+  .fluid-container {
+    padding-top: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
