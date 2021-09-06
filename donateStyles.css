@@ -31,11 +31,22 @@ h3 {
 }
 
 @media (max-width: 1028px) {
+  h1 {
+    font-size: 6rem;
+  }
+
   h3 {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   .discription {
     padding: 20px;
+  }
+
+  .fluid-container {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 400px;
+    padding: 20px 20px;
   }
 }
