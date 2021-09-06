@@ -42,7 +42,6 @@ h1 {
 
 .container-fluid {
   background-image: url('images/main.jpg');
-/*   height: 695px; */
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -62,7 +61,7 @@ h1 {
   border-top: 50px;
   padding: 5%;
   background-color: white;
-  height: 680px;
+  height: 100vh;
 }
 
 .extra-pad {
@@ -82,7 +81,6 @@ h1 {
 .bottom-container {
   padding: 15%;
   background-image: url('images/donate.jpg');
-/*   height: 690px; */
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -156,31 +154,78 @@ ul {
 
 @media (max-width: 1028px) {
   h1 {
-    padding-top: 280px;
-    font-size: 3rem;
+    padding: 0;
+    padding-top: 740px;
+    font-size: 7rem;
+    text-align: center;
   }
 
   .about {
     font-size: 1.5rem;
   }
 
+  .middle-container {
+    padding: 0;
+    padding-left: 20px;
+  }
+
   .img-class {
-    width: 300px;
+    width: 900px;
+    padding: 0;
+    padding-top: 150px;
+    text-align: center;
+    float: none;
+    padding-left: 50px;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 6rem;
+    padding: 0;
+    padding-top: 20px;
   }
 
   .bottom-container {
-    padding-top: 280px;
+    padding-left: 100px;
+    padding-right: 20px;
+    padding-top: 800px;
   }
 
   .fab {
     width: 50px;
   }
 
-  .nav-item {
+  .nav-link {
     text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .middle-container {
+    height: 100vh;
+  }
+
+  .navbar-brand {
+    font-size: 5.5rem;
+  }
+
+  .about {
+    padding: 0;
+    font-size: 3rem;
+  }
+
+  .first {
+    padding-top: 50px;
+  }
+
+  .btn {
+    width: 200px;
+    text-align: center;
+  }
+
+  .head2 {
+    font-size: 5rem;
+  }
+
+  #Donate {
+    margin-top: 280px;
   }
 }
