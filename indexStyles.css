@@ -42,11 +42,12 @@ h1 {
 
 .container-fluid {
   background-image: url('images/main.jpg');
-  height: 100vh;
+  height: 695px;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  display: block;
 }
 
 .img-class {
@@ -57,17 +58,12 @@ h1 {
 }
 
 .middle-container {
-  position: relative;
-  border-top: 50px;
   padding: 5%;
+  padding-top: 100px;
   background-color: white;
-  height: 100vh;
+  height: 695px;
+  display: block;
 }
-
-.extra-pad {
-  padding-top: 30px;
-}
-
 .about {
   font-family: 'Gochi Hand', cursive;
   font-size: 2rem;
@@ -80,11 +76,12 @@ h1 {
 
 .bottom-container {
   padding: 15%;
+  padding-bottom: 280px;
   background-image: url('images/donate.jpg');
-  height: 100vh;
   background-position: center;
   background-size: cover;
   text-align: center;
+  display: block;
 }
 
 h2 {
@@ -115,7 +112,9 @@ h2 {
   text-align: center;
 }
 
-.contact {}
+.contact {
+  display: block;
+}
 
 p {
   color: white;
@@ -125,6 +124,7 @@ p {
   background-color: black;
   text-align: center;
   padding: 2%;
+  display: block;
 }
 
 .textDecor {
@@ -151,81 +151,34 @@ ul {
 .fab {
   margin-right: 30px;
 }
-
-@media (max-width: 480px) {
-  h1 {
-    padding: 0;
-    padding-top: 740px;
-    font-size: 7rem;
-    text-align: center;
+@media only screen and (max-width: 534px) {
+  .container-fluid{
+    background-image: url('images/mobile-main.jpg');
   }
-
-  .about {
-    font-size: 1.5rem;
-  }
-
-  .middle-container {
-    padding: 0;
-    padding-left: 20px;
-  }
-
-  .img-class {
-    width: 900px;
-    padding: 0;
-    padding-top: 150px;
-    text-align: center;
-    float: none;
-    padding-left: 50px;
-  }
-
-  h2 {
-    font-size: 6rem;
-    padding: 0;
-    padding-top: 20px;
-  }
-
-  .bottom-container {
-    padding-left: 100px;
-    padding-right: 20px;
-    padding-top: 800px;
-  }
-
-  .fab {
-    width: 50px;
-  }
-
-  .nav-link {
-    text-align: center;
-    font-size: 2.5rem;
-  }
-
-  .middle-container {
-    height: 100vh;
-  }
-
-  .navbar-brand {
-    font-size: 5.5rem;
-  }
-
-  .about {
-    padding: 0;
+  h1{
     font-size: 3rem;
+    padding-top: 200px;
   }
-
-  .first {
-    padding-top: 50px;
+  .navbar-brand{
+    font-size: 2.2rem;
   }
-
-  .btn {
-    width: 200px;
-    text-align: center;
+  .img-class{
+    width: 100%;
+    padding-right: 0;
   }
-
-  .head2 {
-    font-size: 5rem;
+  .about{
+    font-size: 1.8rem;
+    margin: 0;
   }
-
-  #Donate {
-    margin-top: 280px;
+  .middle-container{
+    height: 1400px;
+  }
+  h2{
+    font-size: 2.2rem;
+  }
+  .bottom-container{
+    height: 100vh;
+    padding: 5%;
+    padding-top: 250px;
   }
 }
