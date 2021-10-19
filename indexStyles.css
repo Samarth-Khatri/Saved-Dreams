@@ -103,7 +103,8 @@ h2 {
 
 .trans {
   animation: fadeIn 1s;
-  background: rgba(0, 0, 0, 1);
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(16px);
 }
 
 .head2 {
