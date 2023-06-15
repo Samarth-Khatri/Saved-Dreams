@@ -1,0 +1,186 @@
+body {
+    background-color: white;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .navbarTop {
+    padding: 0 5%;
+  }
+  
+  .navbar-brand {
+    font-family: 'Azeret Mono', monospace;
+    font-size: 2.5rem;
+  }
+  
+  .nav-link {
+    font-family: 'Azeret Mono', monospace;
+    font-weight: lighter;
+    font-size: 1.3rem;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    color: white;
+    text-align: left;
+    padding: 17% 30% 10% 5%;
+    font-family: 'Gochi Hand', cursive;
+    animation: fadeIn 4s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .container-fluid {
+    background-image: url('../images/main.jpg');
+    height: 695px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: block;
+  }
+  
+  .img-class {
+    width: 40%;
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .middle-container {
+    padding: 5%;
+    padding-top: 100px;
+    background-color: white;
+    height: 695px;
+    display: block;
+  }
+  .about {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 2rem;
+    color: black;
+  }
+  
+  .second {
+    float: right;
+  }
+  
+  .bottom-container {
+    padding: 15%;
+    padding-bottom: 280px;
+    background-image: url('../images/donate.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: block;
+  }
+  
+  h2 {
+    font-size: 3rem;
+    font-family: 'Gochi Hand', cursive;
+    padding: 2% 24% 2% 27%;
+    transform: rotate(-6deg);
+  }
+  
+  .btn {
+    transform: rotate(-6deg);
+    font-family: 'Gochi Hand', cursive;
+    font-size: 1.7rem;
+  }
+  
+  .animation {
+    animation: fadeIn 4s;
+  }
+  
+  .trans {
+    animation: fadeIn 1s;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(16px);
+  }
+  
+  .head2 {
+    color: black;
+    padding: 5% 5%;
+    text-align: center;
+  }
+  
+  .contact {
+    display: block;
+  }
+  
+  p {
+    color: white;
+  }
+  
+  #footer {
+    background-color: black;
+    text-align: center;
+    padding: 2%;
+    display: block;
+  }
+  
+  .textDecor {
+    border-bottom: 2px solid currentColor;
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  
+  ul {
+    list-style-type: none;
+    font-size: 1.5rem;
+  }
+  
+  .col-md-6 {
+    flex: 0 0 auto;
+    text-align: center;
+  }
+  
+  .row {
+    margin: 0;
+    padding: 5%;
+  }
+  
+  .fab {
+    margin-right: 30px;
+  }
+  @media only screen and (max-width: 534px) {
+    .container-fluid{
+      background-image: url('../images/mobile-main.jpg');
+    }
+    h1{
+      font-size: 3rem;
+      padding-top: 200px;
+    }
+    .navbar-brand{
+      font-size: 2.2rem;
+    }
+    .img-class{
+      width: 100%;
+      padding-right: 0;
+    }
+    .about{
+      font-size: 1.8rem;
+      margin: 0;
+    }
+    .middle-container{
+      height: 1400px;
+    }
+    h2{
+      font-size: 2.2rem;
+    }
+    .bottom-container{
+      height: 100vh;
+      padding: 5%;
+      padding-top: 250px;
+    }
+  }
+  

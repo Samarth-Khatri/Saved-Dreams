@@ -1,0 +1,33 @@
+body {
+  background-color: white;
+}
+
+.fluid-container {
+  background-color: rgba(0, 0, 0, 0);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 1.5rem;
+}
+
+.image {
+  width: 400px;
+}
+
+@media (max-width: 1028px) {
+  .img {
+    width: 500px;
+  }
+
+  .discription {
+    padding: 0;
+    font-size: 4rem;
+  }
+
+  .fluid-container {
+    padding-top: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
