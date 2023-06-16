@@ -20,25 +20,32 @@
             <h3>Any help or donation,
                 no matter how small or big,
                 will be deeply appriciated and is much needed.</h3>
-            <form method="post" action="/donate">
-                <label for="name">Name</label>
-                <input type="text" name="name">
-                <br>
-                <label for="email">Email</label>
-                <input type="email" name="email">
-                <br>
-                <label>What would you like to donate?</label>
-                <select name="category" class="selectVal">
-                    <option value="">Select Category</option>
-                    <option name="food" value="food">Food</option>
-                    <option value="clothes">Clothes</option>
-                    <option value="supplies">School Supplies</option>
-                </select>
-                <br>
-                <label for="">Message</label>
-                <textarea type="text" rows="4" name="message"></textarea>
-                <br>
-                <button type="submit">Submit</button>
+            <form class="form" method="post" action="/donate">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label>What would you like to donate?</label>
+                    <select name="category" class="selectVal">
+                        <option value="">Select Category</option>
+                        <option name="food" value="food">Food</option>
+                        <option value="clothes">Clothes</option>
+                        <option value="supplies">School Supplies</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Message</label>
+                    <textarea type="text" rows="4" name="message"></textarea>
+                </div>
+                <!-- <div class="form-group">
+                    <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HtY6WrU5CXSgQl" async> </script>
+                </div> -->
+                <button class="btn" type="submit">Submit</button>
             </form>
         </div>
     </div>
