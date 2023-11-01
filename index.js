@@ -2,26 +2,26 @@ const express = require('express');
 const mongoose = require("mongoose")
 const dotenv = require("dotenv")
 const path = require("path")
+const User = require('./models/user')
 
 const app = express();
-const PORT = 3000;
-const User = require('./models/user')
+const PORT = process.env.PORT | 3000;
 const static_path = path.join(__dirname, "./public")
 
 
 dotenv.config();
-// app.use(express.json())
+app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(express.static(static_path))
 app.set("view engine", "ejs")
 
-mongoose.connect(process.env.MONGO_URL, {
-    useNewUrlParser: true,
+
+mongoose.connect(process.env.MONGO_URI)
+.then(()=>{
+    console.log('Database is connected')
 })
-.then(()=> {
-    console.log("Database connection done")
-}).catch(()=> {
-    console.log("Something went wrong")
+.catch((error) => {
+    console.log(`Database connection failed: ${error}`)
 })
 
 
@@ -37,18 +37,11 @@ app.get("/success", (req, res) => {
     res.render("success")
 })
 
-// app.post("/donate", (req, res)=>{
-//     console.log(req.body)
-//     res.redirect("/donate")
-// })
-
 app.post("/donate", async (req, res) => {
     try{
         const data = new User(req.body)
         await data.save()
         res.redirect("/success")
-        // console.log(req.body)
-        // res.send(req.body.food)
     }
     catch(err){
         res.status(400).send(err)

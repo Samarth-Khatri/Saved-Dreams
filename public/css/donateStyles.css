@@ -4,6 +4,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 .fluid-container {
@@ -17,13 +18,11 @@ body {
 h1 {
   color: #FFB319;
   font-size: 2.5rem;
-  font-family: 'Fira Sans', sans-serif;
 }
 
 h3 {
   color: white;
   font-size: 1.3rem;
-  font-family: 'Fira Sans', sans-serif;
 }
 
 .discription {
@@ -51,43 +50,30 @@ h3 {
   }
 }
 
-.dropbtn {
+.form {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.form-group input {
+  padding: 4px;
+}
+
+.selectVal {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.btn {
+  width: 100px;
   background-color: #04AA6D;
   color: white;
-  padding: 16px;
+  padding: 10px 15px;
   font-size: 16px;
   border: none;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+  border-radius: 8px;
+  cursor: pointer;
 }
